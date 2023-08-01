@@ -38,13 +38,13 @@
 
 <div class="modal-footer">
   {{d-button
-    action="uploadFile"
+    action=(action "uploadFile")
     class='btn-primary'
     icon=uploadIcon
     label='upload'
     disabled=disallowUpload
   }}
   {{d-modal-cancel
-    close=(action "closeModal")
+    action=(action "closeModal")
   }}
 </div>
